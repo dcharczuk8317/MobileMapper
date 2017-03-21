@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     let herseyAnnotation = MKPointAnnotation()
     let address = "Mount Rushmore"
     let geocoder = CLGeocoder()
+    let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,9 @@ class ViewController: UIViewController {
                 self.mapView.addAnnotation(annotation)
             }
         }
+        
+        locationManager.requestWhenInUseAuthorization()
+        mapView.showsUserLocation = true
     }
 
 }
