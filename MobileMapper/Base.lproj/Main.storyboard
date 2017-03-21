@@ -34,6 +34,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OQ6-26-0ZL"/>
+                    <connections>
+                        <outlet property="mapView" destination="3fU-J2-Kf3" id="L6d-Qw-xCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
